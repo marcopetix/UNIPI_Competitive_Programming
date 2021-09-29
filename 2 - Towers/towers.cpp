@@ -15,7 +15,7 @@ class Solution{
         for(int i=1; i<n; i++){
             if (arr[i] > max) max = arr[i];
         }
-        cout << "max: " << max << endl;
+        // cout << "max: " << max << endl;
         
         vector<int> counts(max + 1, 0);
 
@@ -26,7 +26,7 @@ class Solution{
         max_height = counts[0];
         max_tot_num = counts[0];
         for(int i=1; i<max+1; i++){
-            cout << i << " - " << counts[i] << endl;
+            // cout << i << " - " << counts[i] << endl;
             if(counts[i]*(i) > max_tot_num){
                 max_height = counts[i];
                 max_tot_num = counts[i]*(i);
